@@ -1,0 +1,23 @@
+CHIP Mux16 {
+
+    IN  a[16], b[16], sel;
+    OUT out[16];
+
+PARTS:
+    Mux(A=a[0], B=b[0], sel=sel, out=out[0]);
+    Mux(A=a[1], B=b[1], sel=sel, out=out[1]);
+    Mux(A=a[2], B=b[2], sel=sel, out=out[2]);
+    Mux(A=a[3], B=b[3], sel=sel, out=out[3]);
+    Mux(A=a[4], B=b[4], sel=sel, out=out[4]);
+    Mux(A=a[5], B=b[5], sel=sel, out=out[5]);
+    Mux(A=a[6], B=b[6], sel=sel, out=out[6]);
+    Mux(A=a[7], B=b[7], sel=sel, out=out[7]);
+    Mux(A=a[8], B=b[8], sel=sel, out=out[8]);
+    Mux(A=a[9], B=b[9], sel=sel, out=out[9]);
+    Mux(A=a[10], B=b[10], sel=sel, out=out[10]);
+    Mux(A=a[11], B=b[11], sel=sel, out=out[11]);
+    Mux(A=a[12], B=b[12], sel=sel, out=out[12]);
+    Mux(A=a[13], B=b[13], sel=sel, out=out[13]);
+    Mux(A=a[14], B=b[14], sel=sel, out=out[14]);
+    Mux(A=a[15], B=b[15], sel=sel, out=out[15]);
+}

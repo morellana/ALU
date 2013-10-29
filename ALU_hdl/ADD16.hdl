@@ -1,0 +1,21 @@
+CHIP ADD16 {
+	IN A[16], B[16];
+	OUT out[16];
+PARTS:
+	HA(A=A[0], B=B[0], S=out[0], C=C1);
+	FA(A=A[1], B=B[1], C0=C1, S=out[1], C1=C2);
+	FA(A=A[2], B=B[2], C0=C2, S=out[2], C1=C3);
+	FA(A=A[3], B=B[3], C0=C3, S=out[3], C1=C4);
+	FA(A=A[4], B=B[4], C0=C4, S=out[4], C1=C5);
+	FA(A=A[5], B=B[5], C0=C5, S=out[5], C1=C6);
+	FA(A=A[6], B=B[6], C0=C6, S=out[6], C1=C7);
+	FA(A=A[7], B=B[7], C0=C7, S=out[7], C1=C8);
+	FA(A=A[8], B=B[8], C0=C8, S=out[8], C1=C9);
+	FA(A=A[9], B=B[9], C0=C9, S=out[9], C1=C10);
+	FA(A=A[10], B=B[10], C0=C10, S=out[10], C1=C11);
+	FA(A=A[11], B=B[11], C0=C11, S=out[11], C1=C12);
+	FA(A=A[12], B=B[12], C0=C12, S=out[12], C1=C13);
+	FA(A=A[13], B=B[13], C0=C13, S=out[13], C1=C14);
+	FA(A=A[14], B=B[14], C0=C14, S=out[14], C1=C15);
+	FA(A=A[15], B=B[15], C0=C15, S=out[15], C1=C16);
+}

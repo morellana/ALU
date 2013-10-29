@@ -1,0 +1,7 @@
+CHIP HA {
+	IN A, B;
+	OUT S, C;
+PARTS:
+	XOR(A=A, B=B, C=S);
+	AND(A=A, B=B, C=C);
+}

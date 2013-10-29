@@ -1,0 +1,10 @@
+CHIP FA {
+	IN A, B, C0;
+	OUT S, C1;
+PARTS:
+	XOR(A=A, B=B, C=o1);
+	XOR(A=o1, B=C0, C=S);
+	AND(A=C0, B=o1, C=o2);
+	AND(A=A, B=B, C=o3);
+	OR(A=o2, B=o3, C=C1);
+}
